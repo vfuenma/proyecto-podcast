@@ -1,0 +1,67 @@
+#topicos{
+    margin-top: 4rem;
+}
+
+
+
+.caja-icono{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 0px;
+    align-items: center;
+}
+
+
+.caja-icono .iconos{
+    position: relative;
+    width: 8.67rem;
+    height: 8.67rem;
+    align-items: center;
+    margin-top: 4.08rem;
+
+}
+
+.letra-iconos{
+    font-family: "IBM Plex Sans";
+    font-weight: 600;
+    font-size: 2rem;
+    color: #060A24;
+    letter-spacing: 0;
+    text-align: center;
+   
+    
+}
+
+@media screen and (min-width: 1400px) {
+
+   #nosotros{
+       height: 35.5rem;
+   }
+   
+   
+    .caja-icono{
+
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        align-items: center;
+        justify-content: space-around;
+        padding-right: 23.17rem;
+        padding-left: 23.17rem;
+
+    }
+
+    .caja-icono figure{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figcaption{
+        width: 18.33rem;
+        margin-top: 2.42rem;
+    }
+
+    }

@@ -1,0 +1,185 @@
+
+/*estilos header*/
+
+.header {
+    width: 100%;
+  }
+  
+  .header-title-section {
+    height: 3.55rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    padding: 1.33rem;
+    
+  }
+  /* Estilos del menu */
+
+.menu {
+    display: none;
+    flex-direction: column;
+    width: 26.66rem;
+    height: 18.66rem;
+    background: #0000ec;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0.66rem 1.33rem;
+    margin-bottom: 0.83rem;
+    text-decoration: none;
+  }
+  
+  .letra-menu {
+    font-family: "IBM Plex Mono";
+    font-size: 1.33rem;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 2.33rem;
+  }
+  
+  .header-logo-1{
+    display:none;
+  }
+
+  /* Ocultar y sacar el menu desde la vista mobile */
+
+.menu-toggle{
+    display:none;
+  }
+  
+  .menu-toggle-button{
+    width: 1.5rem;
+    height: 1rem;
+  }
+  
+  #toggle:checked + .header + .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Rotacion del icono del menú */
+  
+  #toggle:checked + .header .header-title-section .menu-toggle-button .menu-line-1{
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+    margin:0;
+  }
+    #toggle:checked + .header .header-title-section .menu-toggle-button .menu-line-2 {
+      opacity: 0;
+  }
+  
+  #toggle:checked + .header .header-title-section .menu-toggle-button .menu-line-3{
+    -webkit-transform: rotate(45deg) translate(-1px, -2px);
+    transform: rotate(45deg) translate(-1px, 2px);
+    margin:0;
+  }
+  
+  /* Menú mobile estilos */
+  
+  .menu a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: white;
+    transition: 0.3s;
+  }
+  
+  
+  .menu-toggle-button > .menu-line {
+    width: 1.5rem;
+    height: 0.166rem;
+    background-color: #000000;
+    margin: 0.25rem 0;
+    transition: 0.4s;
+  
+  }
+
+/* versión de escritorio */
+
+@media screen and (min-width: 1400px) {
+    .menu a {
+      text-decoration: none;
+      font-family: "IBM Plex Mono";
+      font-size: 1.33rem;
+      color: #060a24;
+      letter-spacing: 0;
+      line-height: 2.33rem;
+      
+    }
+    .menu {
+      padding-top: 1.83rem;
+      padding-left: 8.33rem;
+      padding-right: 8.33rem;
+      width: 100%;
+      height: 6.66rem;
+      background: #ffffff;
+    }
+  
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .menu-toggle-button > .menu-line {
+      display: none;
+    }
+  
+    .menu .espacio{
+      flex: 1 1 auto;
+    }
+    .menu a:hover{
+      color: blue;
+      background: none;
+    }
+  
+    .header{
+      display:none;
+    }
+  
+    .header-logo{
+      display: none;
+    }
+  
+    .header-logo-1{
+      display: flex;
+      width: 3rem;
+      height: 3rem;
+    }
+    
+    .titulo{
+      font-size: 5.33rem;
+      margin: 2rem 1rem;
+    }
+
+    main{
+      padding-left: 16.67rem;
+      padding-top: 10rem;
+    }
+
+    .boton-nosotros{
+      margin: 4.67rem 1.33rem
+    }
+
+
+    .ltr-estilo-movile{
+      display: none;
+    }
+
+    .version-web{
+      display: flex;
+      position: relative;
+      font-family: "IBM Plex Mono";
+      font-size: 1.33rem;
+      color: #060A24;
+      margin-left: 1.33rem;
+      letter-spacing: 0;
+      line-height: 2rem;
+      padding-right: 51rem;;
+      }
+    
+
+  }
+
+
